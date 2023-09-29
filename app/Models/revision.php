@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-class tareaCategoria extends Model
+use Illuminate\Database\Eloquent\SoftDeletes;
+class revision extends Model
 {
-    use HasFactory;
-} 
+    use HasFactory, SoftDeletes;
+}

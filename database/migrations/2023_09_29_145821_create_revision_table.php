@@ -15,6 +15,7 @@ class CreateRevisionTable extends Migration
             $table->unsignedBigInteger("tarea_id");
             $table->foreign("tarea_id")->references("id")->on("tarea");
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -14,7 +14,6 @@ class CreateTareaCategoriaTable extends Migration
             $table->unsignedBigInteger("tarea_id");
             $table->foreign("tarea_id")->references("id")->on("tarea");
             $table->string("categoria");
-            $table->timestamps();
         });
     }
 
