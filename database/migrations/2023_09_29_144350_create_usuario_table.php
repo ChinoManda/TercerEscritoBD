@@ -13,6 +13,7 @@ class CreateUsuarioTable extends Migration
             $table->string("Nombre");
             $table->string("NombreCompleto");            
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
