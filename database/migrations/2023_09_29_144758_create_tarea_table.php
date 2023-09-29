@@ -14,7 +14,7 @@ class CreateTareaTable extends Migration
             $table->string("titulo");
             $table->string("contenido");
             $table->unsignedBigInteger("usuario_id");
-            $table->foreign("usuario_id")->references("id")->on("usuarios");
+            $table->foreign("usuario_id")->references("id")->on("usuario");
             $table->string("estado");
             $table->string("autor");
             $table->timestamps();
